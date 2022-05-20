@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nutrientRestriction"
+        android:layout_width="336dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/Nutrient"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/font2"
+        android:hint="Nutrient Restriction"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/fontcolor1"
+        android:textColorHint="#7E205522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/KwatroLogo" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="421dp"
+        android:layout_height="201dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/AccountPage" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="206dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:background=""
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/Save"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="206dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:background=""
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:srcCompat="@drawable/Logout" />
+
+    <ImageView
+        android:id="@+id/accountBack"
+        android:layout_width="27dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Back" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="accountBack,imageView10" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageView10,accountBack" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/font1"
+        android:text="Account Page"
+        android:textColor="#376A39"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/nutrientRestriction"
+        tools:layout_editor_absoluteX="266dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
