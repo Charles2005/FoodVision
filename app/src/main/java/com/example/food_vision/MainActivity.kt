@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
@@ -15,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val registerButton = findViewById<Button>(R.id.registerButton)
-        val adminBtn = findViewById<Button>(R.id.adminButton)
-        val loginBtn = findViewById<Button>(R.id.loginButton)
+        val registerButton = findViewById<ImageButton>(R.id.registerButton)
+        val adminBtn = findViewById<ImageButton>(R.id.adminButton)
+        val loginBtn = findViewById<ImageButton>(R.id.loginButton)
 
         val emailText = findViewById<EditText>(R.id.emailTextBox)
         val passwordText = findViewById<EditText>(R.id.passwordTextBox)

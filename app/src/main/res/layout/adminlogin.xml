@@ -60,8 +60,8 @@
         android:layout_width="206dp"
         android:layout_height="57dp"
         android:layout_marginBottom="24dp"
-        android:background=""
         android:scaleType="fitCenter"
+        android:background="@null"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/loginbutton" />

@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class NoDataPage : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -12,8 +13,8 @@ class NoDataPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.nodatapage)
 
-        val leaveBtn = findViewById<Button>(R.id.leaveButton)
-        val sureBtn = findViewById<Button>(R.id.sureButton)
+        val leaveBtn = findViewById<ImageButton>(R.id.leaveButton)
+        val sureBtn = findViewById<ImageButton>(R.id.sureButton)
 
         leaveBtn.setOnClickListener{
             val intent = Intent(this, Dashboard::class.java)

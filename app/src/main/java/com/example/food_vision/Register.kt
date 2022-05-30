@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class Register : AppCompatActivity() {
@@ -15,7 +16,7 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.registerpage)
 
         val regBack = findViewById<ImageView>(R.id.adminBack)
-        val registerBtn = findViewById<Button>(R.id.registerButton)
+        val registerBtn = findViewById<ImageButton>(R.id.registerButton)
 
         val emailReg = findViewById<EditText>(R.id.emailReg)
         val passwordReg = findViewById<EditText>(R.id.adminPassword)

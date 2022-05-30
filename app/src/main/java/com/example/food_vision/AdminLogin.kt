@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class AdminLogin : AppCompatActivity() {
@@ -15,7 +16,7 @@ class AdminLogin : AppCompatActivity() {
         setContentView(R.layout.adminlogin)
 
         val adminBack = findViewById<ImageView>(R.id.adminBack)
-        val adminLogin = findViewById<Button>(R.id.adminLogin)
+        val adminLogin = findViewById<ImageButton>(R.id.adminLogin)
 
         val adminEmail = findViewById<EditText>(R.id.adminEmail)
         val adminPassword = findViewById<EditText>(R.id.adminPassword)

@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class AccountPage : AppCompatActivity() {
@@ -14,8 +15,8 @@ class AccountPage : AppCompatActivity() {
         setContentView(R.layout.accountpage)
 
         val accountBack = findViewById<ImageView>(R.id.accountBack)
-        val logoutBtn = findViewById<Button>(R.id.logoutButton)
-        val saveBtn = findViewById<Button>(R.id.saveButton)
+        val logoutBtn = findViewById<ImageButton>(R.id.logoutButton)
+        val saveBtn = findViewById<ImageButton>(R.id.saveButton)
 
         accountBack.setOnClickListener{
             val intent = Intent(this, Dashboard::class.java)

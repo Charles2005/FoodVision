@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class Dashboard : AppCompatActivity() {
@@ -12,8 +13,8 @@ class Dashboard : AppCompatActivity() {
         setContentView(R.layout.dashboard)
 
         val accountBtn = findViewById<ImageView>(R.id.accountButton)
-        val nutInq = findViewById<ImageView>(R.id.inquiryButton)
-        val feedbackBtn = findViewById<ImageView>(R.id.fdButton)
+        val nutInq = findViewById<ImageButton>(R.id.inquiryButton)
+        val feedbackBtn = findViewById<ImageButton>(R.id.inquiryButton2)
 
         accountBtn.setOnClickListener{
             val intent = Intent(this, AccountPage::class.java)
