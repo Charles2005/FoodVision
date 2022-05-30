@@ -80,11 +80,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+    <EditText
+        android:id="@+id/newIngredients"
+        android:layout_width="336dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/nutrient"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/font2"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/fontcolor1"
+        android:textColorHint="#7E205522"
+        android:hint="Type Ingredients"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
