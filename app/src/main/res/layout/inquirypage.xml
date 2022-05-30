@@ -42,7 +42,7 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="426dp"
+        android:layout_width="wrap_content"
         android:layout_height="187dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,4 +58,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageView14,photoBack" />
 </androidx.constraintlayout.widget.ConstraintLayout>
