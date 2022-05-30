@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/KwatroLogo" />
+        app:srcCompat="@drawable/kwatrologo" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -50,7 +50,7 @@
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Ohoh" />
+        app:srcCompat="@drawable/ohoh" />
 
     <ImageButton
         android:id="@+id/sureButton"
@@ -63,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/leaveButton"
         app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:srcCompat="@drawable/Sure" />
+        app:srcCompat="@drawable/sure" />
 
     <ImageButton
         android:id="@+id/leaveButton"
@@ -74,5 +74,5 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:srcCompat="@drawable/Leave" />
+        app:srcCompat="@drawable/leave" />
 </androidx.constraintlayout.widget.ConstraintLayout>

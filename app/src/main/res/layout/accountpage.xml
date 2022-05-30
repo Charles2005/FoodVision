@@ -12,7 +12,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_border"
-        android:drawableLeft="@drawable/Nutrient"
+        android:drawableLeft="@drawable/nutrient"
         android:drawablePadding="5dp"
         android:ems="10"
         android:fontFamily="@font/font2"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/KwatroLogo" />
+        app:srcCompat="@drawable/kwatrologo" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -41,18 +41,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/AccountPage" />
+        app:srcCompat="@drawable/accountpage" />
 
     <ImageButton
         android:id="@+id/saveButton"
         android:layout_width="206dp"
         android:layout_height="57dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="4dp"
         android:background=""
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/Save"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/save" />
 
     <ImageButton
         android:id="@+id/logoutButton"
@@ -63,7 +64,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
-        app:srcCompat="@drawable/Logout" />
+        app:srcCompat="@drawable/logout" />
 
     <ImageView
         android:id="@+id/accountBack"
@@ -73,7 +74,7 @@
         android:layout_marginTop="108dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Back" />
+        app:srcCompat="@drawable/back" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
@@ -105,8 +106,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/nutrientRestriction"
-        tools:layout_editor_absoluteX="266dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutrientRestriction" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
