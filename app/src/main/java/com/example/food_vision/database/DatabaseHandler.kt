@@ -74,4 +74,64 @@ class DatabaseHandler(context:Context):
         db.close() // Closing database connection
         return insertingFood
     }
+    // Method for updating user and food
+    fun updateUser(user:UserModelClass): Int {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_EMAIL, user.email)
+        contentValues.put(KEY_PASSWORD, user.password)
+        contentValues.put(KEY_RESTRICTION, user.restriction)
+
+        // Updating records
+        val updateUserData = db.update(USER_TABLE, contentValues, KEY_USER_ID +"=" + user.id, null)
+
+        //Closing database connection
+        db.close()
+        return updateUserData
+    }
+
+    fun updateFood(food:FoodModelClass): Int {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_FOOD_NAME, food.name )
+        contentValues.put(KEY_FOOD_INGREDIENTS, food.ingredients)
+        contentValues.put(KEY_FOOD_NUTRIENTS, food.nutrients)
+
+        // Updating records
+        val updateFoodData = db.update(FOOD_TABLE, contentValues, KEY_FOOD_ID +"=" + food.id, null)
+
+        //Closing database connection
+        db.close()
+        return updateFoodData
+    }
+    //Method for deleting user and food
+    fun deleteUser(user:UserModelClass): Int{
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_EMAIL, user.email)
+        contentValues.put(KEY_PASSWORD, user.password)
+        contentValues.put(KEY_RESTRICTION, user.restriction)
+        // Deleting data
+        val deleteUser = db.delete(USER_TABLE, KEY_USER_ID + "=" + user.id, null)
+
+        // Closing Database
+        db.close()
+        return deleteUser
+    }
+
+    fun deleteFood(food:FoodModelClass): Int{
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_FOOD_NAME, food.name)
+        contentValues.put(KEY_FOOD_INGREDIENTS, food.ingredients)
+        contentValues.put(KEY_FOOD_NUTRIENTS, food.ingredients)
+        // Deleting data
+        val deleteFood = db.delete(FOOD_TABLE, KEY_FOOD_ID + "=" + food.id, null)
+
+        // Closing Database
+        db.close()
+        return deleteFood
+    }
+
+
 }
