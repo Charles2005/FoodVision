@@ -1,10 +1,10 @@
-package com.example.food_vision
+package com.example.food_vision.activities
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.example.food_vision.R
 
 class InformationPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

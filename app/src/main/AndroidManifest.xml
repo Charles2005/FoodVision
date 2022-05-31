@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Food_Vision">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register"></activity>
-        <activity android:name=".AccountPage"></activity>
-        <activity android:name=".AdminDashboard"></activity>
-        <activity android:name=".AdminLogin"></activity>
-        <activity android:name=".Dashboard"></activity>
-        <activity android:name=".InformationPage"></activity>
-        <activity android:name=".NewDataPage"></activity>
-        <activity android:name=".NoDataPage"></activity>
-        <activity android:name=".NutritionalInquiry"></activity>
-        <activity android:name=".FeedbackPage"></activity>
+        <activity android:name=".activities.Register"></activity>
+        <activity android:name=".activities.AccountPage"></activity>
+        <activity android:name=".activities.AdminDashboard"></activity>
+        <activity android:name=".activities.AdminLogin"></activity>
+        <activity android:name=".activities.Dashboard"></activity>
+        <activity android:name=".activities.InformationPage"></activity>
+        <activity android:name=".activities.NewDataPage"></activity>
+        <activity android:name=".activities.NoDataPage"></activity>
+        <activity android:name=".activities.NutritionalInquiry"></activity>
+        <activity android:name=".activities.FeedbackPage"></activity>
     </application>
 
 </manifest>

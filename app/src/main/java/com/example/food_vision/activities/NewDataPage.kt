@@ -1,22 +1,22 @@
-package com.example.food_vision
+package com.example.food_vision.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
+import com.example.food_vision.R
 
-class AdminDashboard : AppCompatActivity() {
+class NewDataPage : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.admindashboard)
+        setContentView(R.layout.newfoodpage)
 
-        val adminLogout = findViewById<ImageButton>(R.id.adminLogout)
+        val submitBtn = findViewById<ImageButton>(R.id.submitButton)
 
-        adminLogout.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+        submitBtn.setOnClickListener{
+            val intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }
     }
