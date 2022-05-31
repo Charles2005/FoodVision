@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949328531548",
+    "project_id": "food-vision-9e5a4",
+    "storage_bucket": "food-vision-9e5a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949328531548:android:9f4a91a9ec20a969265699",
+        "android_client_info": {
+          "package_name": "com.example.food_vision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949328531548-vb6h98jsrrg5pj9msvkv31qotfe3kd3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-AnI8ItDiE4dWvmMkGu4dxWopSbpA3_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949328531548-vb6h98jsrrg5pj9msvkv31qotfe3kd3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

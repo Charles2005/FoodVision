@@ -19,7 +19,6 @@
         android:id="@+id/emailReg"
         android:layout_width="336dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/email"
@@ -31,6 +30,7 @@
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
@@ -38,7 +38,6 @@
         android:id="@+id/adminPassword"
         android:layout_width="336dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/password"
@@ -50,6 +49,7 @@
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailReg" />
 
@@ -57,7 +57,6 @@
         android:id="@+id/reenterPassword"
         android:layout_width="336dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="72dp"
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/password"
@@ -69,13 +68,14 @@
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailReg" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="20dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,11 +97,14 @@
         android:id="@+id/adminLogin"
         android:layout_width="206dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="fitCenter"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
         android:background="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reenterPassword"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/registerbutton" />
 
     <ImageView
