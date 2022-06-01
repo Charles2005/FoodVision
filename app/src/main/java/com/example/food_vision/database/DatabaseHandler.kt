@@ -41,12 +41,127 @@ class DatabaseHandler(context:Context):
 
         db?.execSQL(CREATE_USER_TABLE)
         db?.execSQL(CREATE_FOOD_TABLE)
+
+        addDefaultFood(db, "Adobo",
+            "Canola Oil, Garlic, Onion, Chicken, Vinegar, " +
+                    "Soy Sauce, Water, Bay Leaves, Black Pepper, Sugar, Spinach",
+                    "Calories, Protein, Saturated Fat, Niacin, Selenium, Phosphorus " +
+                            "Vitamin B6, Vitamin B12, Riboflavin, Zinc, Thiamine, Potassium, Copper " +
+                            "Sodium, Carbohydrates, Fiber, Vitamin C, Magnesium, Vitamin K, Vitamin F " +
+                            "Folate, Dietary Fiber")
+
+        addDefaultFood(db, "Sisig",
+            "Pork Belly, Onion, Soy Sauce, Black Pepper, Chili, Calamansi, Butter " +
+                    "Chicken Liver, Water, Mayonnaise, Salt",
+                    "Carbohydrate, Protein, Saturated Fat, Folates, Niacin, Pantothenic Acid, " +
+                            "Pyridoxine, Riboflavin, Thiamine, Vitamin A, Vitamin C, Vitamin E " +
+                            "Vitamin K, Calcium, Magnesium, Phosphorus, Zinc, Sodium, Vitamins B6 " +
+                            "Vitamin B12, Iron, Copper, Dietary Fiber")
+
+        addDefaultFood(db, "Pancit Palabok",
+            "Bihon Noodles, Cooking Oil, Garlic " +
+                "Onion, Ground Pork, Pork Broth, Atsuete, Fish Sauce, Cornstarch, Shrimp, " +
+                    "Smoked Fish Flakes, Pork chicharon, Egg(Hardboiled), Cabbage, Squid, Calamansi",
+            "Calories, Carbohydrate, Protein, Saturated Fat, Calcium, Riboflavin, Niacin " +
+                    "Iron Phosphorus, Potassium, Vitamin A, Vitamin C, Thiamine, Dietary Fiber, " +
+                    "Zinc Vitamin B6, Vitamin B12, Vitamin E, Sodium, Potassium, Folate, Manganese")
+
+        addDefaultFood(db, "Bulalo",
+            "Beef Shank, Cabbage, Corn, Black Pepper, Onion, Water, Fish Sauce",
+        "Calories, Protein, Fiber, Vitamin K, Vitamin C, Folate, Manganese, Vitamin B, " +
+                "Calcium, Potassium, Magnesium, Iron, Vitamin A, Sodium")
+
+        addDefaultFood(db, "Arroz Caldo",
+        "Olive Oil, Onion, Garlic, Ginger, Chicken Wings, Fish Sauce, Chicken Broth, " +
+                "Sweet Rice, Salt, Pepper, Calamansi",
+        "Calories, Sodium, Carbohydrate, Dietary Fiber, Protein, Vitamin C, Zinc, " +
+                "Vitamin E, Vitamin K, Saturated Fat, Unsaturated Fat, Monosaturated Fat, Potassium, " +
+                "Iron, Vitamin A, Thiamine, Phosphorus, Niacin, Riboflavin, Calcium")
+
+        addDefaultFood(db, "Tinola",
+            "Chicken, Fish Sauce, Onion, Garlic, Ginger, Water, Vegetable Oil, Spinach, " +
+                    "Moringa Leaves, Black Pepper, Salt, Sayote",
+            "Calories, Protein, Saturated Fat, Monosaturated Fat, Niacin, Selenium, " +
+                    "Phosphorus, Vitamin B6, Vitamin B12, Riboflavin, Zinc, Thiamine, Potassium, " +
+                    "Copper, Sodium, Dietary Fiber, Magnesium, Vitamin A, Vitamin C, Vitamin K, " +
+                    "Iron, Folate, Niazimicin")
+
+        addDefaultFood(db, "Kare-Kare",
+        "Beef, Tripe, Peanut Butter, Grounded Toasted Rice, Bagoong, Onion, Garlic " +
+                "Atsuete, Egg plant, Cabbage, String beans, Okra, Oil, Water, Salt",
+        "Calories, Protein, Saturated Fat, Carbohydrates, Fiber, Folate, Vitamin A " +
+                "Vitamin C, Vitamin K, Calcium, Iron, Magnesium, Phosphorus, Potassium, Vitamin E, " +
+                "Folate, Sodium")
+
+        addDefaultFood(db, "Sinigang",
+        "Pork Belly, Kangkong, Fish Sauce, String beans, Tomato, Green Long Chili, " +
+                "Cooking Oil, Water, Onion, Gabi, Sinigang mix",
+        "Calories, Protein, Saturated Fat, Sodium, Thiamine, Riboflavin, Niacin, " +
+                "Pantothenic Acid, Vitamin B6, Vitamin B12, Vitamin E, Iron, Zinc, Copper, Beta-Carotene " +
+                "Magnesium, Phosphorus, Potassium, Vitamin A, Vitamin K, Folate")
+
+        addDefaultFood(db, "Dinuguan",
+        "Pig blood, Vinegar, Oil, Garlic, Onion, Pork belly, Fish sauce, Salt, " +
+                "Pepper, Bay leaves, Water, Green long chili",
+        "Calories, Protein, Saturated Fat, Sodium, Thiamine, Riboflavin, Niacin, " +
+                "Pantothenic Acid, Vitamin B6, Vitamin B12, Vitamin E, Zinc, Copper, Sodium, " +
+                "Potassium, Magnesium, Vitamin K")
+
+        addDefaultFood(db, "Pinakbet",
+        "Pork Belly,  Chicharon, Shrimp Paste, Squash, Onion, Garlic, Oil, Tomato, " +
+                "Water, Okra, String beans, Ampalaya, Eggplant",
+        "Calories, Protein, Fat, Sodium, Thiamine, Riboflavin, Miacin, Pantothenic Acid " +
+                "Vitamin B6, Vitamin B12, Vitamin E, Iron, Zinc, Copper, Vitamin K, Potassium, " +
+                "Dietary Fiber, Vitamin C, Magnesium, Calcium, Phosphorus, Vitamin A, Folate")
+
+        addDefaultFood(db, "Bicol Express",
+        " Pork Belly, Coconut Milk, Coconut Cream, Shrimp Paste, Garlic, Chili pepper, " +
+                "Ginger, Onion, Serrano Pepper, Water",
+        "Calories, Protein, Fat, Sodium, Thiamine, Riboflavin, Niacin, Pantothenic Acid, " +
+                "Vitamin B6, Vitamin B12, Vitamin E, Iron, Zinc, Copper, Vitamin C, Folate, " +
+                "Choline, Magnesium, Phosphorus, Sodium")
+
+        addDefaultFood(db, "Kaldereta",
+        "Beef Short Ribs, Knorr Beef Cube, Tomato Sauce, Red Wine, Potato, Carrot," +
+                "Bell pepper, Manzanilla Olives, Sprigs Thyme, Onion, Garlic,  Soy Sauce, Liver Spread, " +
+                "Water, Olive Oil, Salt, Black pepper",
+        "Saturated Fat, Sodium, Carbohydrate, Potassium, Protein, Vitamin A, Vitamin C, " +
+                "Calcium, Iron, Vitamin E, Vitamin K, Magnesium")
+
+        addDefaultFood(db, "Ginataang Gulay",
+        "Squash, Green bean, Pork Belly, Knorr Ginataang Gulay, Shrimp, Onion, " +
+                "Garlic, Water, Cooking Oil",
+        "Calories, Protein, Saturated Fat, Sodium, Thiamine, Riboflavin, Niacin, " +
+                "Panthothenic Acid, Vitamin B6, Vitamin B12, Vitamin E, Iron, Zinc, Copper, " +
+                "Vitamin A, Dietary Fiber, Vitamin K, Vitamin C, Magnesium, Potassium, Sodium")
+
+        addDefaultFood(db, "Tokwa't Baboy",
+        "Pork Belly, Black Pepper, Salt, Water, Tofu, Oil, Onion, Green long chili",
+        "Calories, Protein, Fat, Sodium, Thiamine, Riboflavin, Niacin, Pantothenic Acid, " +
+                "Vitamin B6, Vitamin B12, Vitamin E, Iron, Zinc, Copper, Vitamin K, Dietary Fiber, " +
+                "Magnesium, Potassium, Manganese, Selenium, Vitamin A, Phosphorus")
+
+        addDefaultFood(db, "Binagoongan",
+        "Pork Belly, Tomato, Eggplant, Pork Broth, Vinegar, Bagoong Alamang, Onion, " +
+                "Garlic, Sugar, Black pepper, Oil",
+        "Calories, Saturated Fat, Polyunsaturated Fat, Monounsaturated Fat, " +
+                "Sodium, Carbohydrate, Fiber, Protein, Magnesium, Vitamin K, Calcium, Iron, Vitamin E")
     }
+
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db!!.execSQL("DROP TABLE IF EXISTS " + USER_TABLE)
         db.execSQL("DROP TABLE IF EXISTS " + FOOD_TABLE)
         onCreate(db)
+    }
+    // Method for putting default values in FOOD DATABASE
+    private fun addDefaultFood(db:SQLiteDatabase?, name: String, ingredients: String, nutrients: String){
+        val contentValues = ContentValues()
+        contentValues.put(KEY_FOOD_NAME, name)
+        contentValues.put(KEY_FOOD_INGREDIENTS, ingredients)
+        contentValues.put(KEY_FOOD_NUTRIENTS, nutrients)
+        db?.insert(FOOD_TABLE, null, contentValues)
+
     }
 
     // Getting all data in User data and Food Data
