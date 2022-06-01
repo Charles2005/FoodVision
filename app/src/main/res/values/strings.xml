@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Food_Vision</string>
+    <string-array name="nutrients">
+        <item> Vitamin A </item>
+       <item>Vitamin D</item>
+        <item>Vitamin E</item>
+        <item>Vitamin K </item>
+        <item>Vitamin B1 </item>
+        <item>Vitamin B12 </item>
+        <item>Vitamin B6 </item>
+        <item>Vitamin B2 </item>
+        <item>Vitamin B5 </item>
+        <item>Vitamin B3 </item>
+        <item>Vitamin B9 </item>
+        <item>Vitamin B7 </item>
+        <item>Vitamin B6 </item>
+        <item>Vitamin C </item>
+        <item>Vitamin D </item>
+        <item>Cholesterol</item>
+        <item>Magnesium</item>
+        <item>Calcium</item>
+        <item>Phosphorus</item>
+        <item>Sulfur</item>
+        <item>Sodium</item>
+        <item>Potassium</item>
+        <item>Chloride </item>
+        <item>Iron</item>
+        <item>Selenium</item>
+        <item>Zinc</item>
+        <item>Manganese</item>
+        <item>Chromium</item>
+        <item>Copper</item>
+        <item>Iodine</item>
+        <item>Fluoride</item>
+        <item>Molybdenum</item>
+        <item>Protein</item>
+        <item>Carbohydrate</item>
+        <item>Saturated fat</item>
+        <item>Unsaturated fat</item>
+        <item>Trans fat</item>
+        <item>Dietary fiber</item>
+        <item>Sugar</item>
+    </string-array>
 </resources>

@@ -163,7 +163,6 @@ class DatabaseHandler(context:Context):
         db?.insert(FOOD_TABLE, null, contentValues)
 
     }
-
     // Getting all data in User data and Food Data
     @SuppressLint("Range")
     fun getAllUser(): List<UserModelClass>{
