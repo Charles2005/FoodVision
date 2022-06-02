@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="418dp"
+        android:layout_height="275dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maingfx" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -16,13 +26,7 @@
         android:textColor="#376A39"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="imageView,imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageButton
         android:id="@+id/loginButton"
@@ -113,28 +117,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/emailTextBox" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="270dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            tools:srcCompat="@drawable/login" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="225dp"
-            android:layout_height="189dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="80dp"
-            app:srcCompat="@drawable/logo" />
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
