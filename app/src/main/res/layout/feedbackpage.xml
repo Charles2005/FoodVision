@@ -22,7 +22,6 @@
         android:id="@+id/fbEmail"
         android:layout_width="336dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/email"
@@ -34,6 +33,7 @@
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -41,7 +41,6 @@
         android:id="@+id/fbName"
         android:layout_width="336dp"
         android:layout_height="44dp"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/edit_text_border"
         android:drawableLeft="@drawable/person"
@@ -53,6 +52,7 @@
         android:paddingLeft="10dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fbEmail" />
 
