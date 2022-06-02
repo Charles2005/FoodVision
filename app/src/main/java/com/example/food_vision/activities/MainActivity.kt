@@ -41,13 +41,11 @@ class MainActivity : AppCompatActivity() {
         // Database
         dbHandler = DatabaseHandler(this)
 
-     /*   if(currentUser != null && currentUser.isEmailVerified()){
-            startActivity(Intent(this, Register::class.java))
+        if(currentUser != null && currentUser.isEmailVerified()){
+            startActivity(Intent(this, Dashboard::class.java))
 
-        }else{
-            auth.signOut()
         }
-*/
+
         registerButton.setOnClickListener{
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
