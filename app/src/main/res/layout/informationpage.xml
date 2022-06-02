@@ -21,13 +21,13 @@
         android:id="@+id/foodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/font1"
         android:text="Name of Food"
         android:textColor="#376A39"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -76,5 +76,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="imageView17,foodImage,nutritionBack" />
+
+    <EditText
+        android:id="@+id/inputFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type the food name here!"
+        android:background="@null"
+        android:textColorHint="#376A39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="392dp"
+        android:layout_height="301dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFoodName">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/enterFood"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#ebebeb"
+        android:text="Enter"
+        android:textColor="#376A39"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toEndOf="@+id/inputFoodName"
+        app:layout_constraintTop_toBottomOf="@+id/foodName"
+        app:layout_constraintVertical_bias="0.264" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
