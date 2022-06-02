@@ -6,12 +6,19 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import com.example.food_vision.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class Dashboard : AppCompatActivity() {
+
+    private lateinit var auth:FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard)
 
+        // Components
         val accountBtn = findViewById<ImageView>(R.id.accountButton)
         val nutInq = findViewById<ImageButton>(R.id.inquiryButton)
         val feedbackBtn = findViewById<ImageButton>(R.id.inquiryButton2)

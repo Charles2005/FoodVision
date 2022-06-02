@@ -27,6 +27,7 @@
         <activity android:name=".activities.NoDataPage"></activity>
         <activity android:name=".activities.NutritionalInquiry"></activity>
         <activity android:name=".activities.FeedbackPage"></activity>
+        <activity android:name=".activities.DataPrivacyPage"></activity>
     </application>
 
 </manifest>

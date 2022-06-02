@@ -85,7 +85,6 @@ class Register : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     // Components
                     var success : Boolean = false
                     val user: UserModelClass = UserModelClass()
-                    val nutrients = resources.getStringArray(R.array.nutrients)
                     user.email = emailReg.text.toString().trim{it <= ' '}
                     user.password = passwordReg.text.toString().trim{it <= ' '}
                     user.restriction = restriction
@@ -98,7 +97,7 @@ class Register : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         auth.createUserWithEmailAndPassword(user.email, user.password)
                             .addOnCompleteListener(this){ task ->
                                 if(task.isSuccessful){
-                                    success = dbHandler?.addUser(user) as Boolean
+                                    //success = dbHandler?.addUser(user) as Boolean
                                     // Sending Email Verification
                                     val firebaseUser = Firebase.auth.currentUser
                                     firebaseUser!!.sendEmailVerification()
@@ -136,7 +135,6 @@ class Register : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         restriction = parent?.getItemAtPosition(position).toString()
-        Toast.makeText(this@Register, restriction, Toast.LENGTH_SHORT).show()
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
