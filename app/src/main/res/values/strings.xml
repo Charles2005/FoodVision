@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food_Vision</string>
+    <string name="app_name">Food Vision</string>
     <string-array name="nutrients">
         <item> Vitamin A </item>
        <item>Vitamin D</item>

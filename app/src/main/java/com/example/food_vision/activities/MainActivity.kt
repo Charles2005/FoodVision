@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
 
         if(currentUser != null && currentUser.isEmailVerified()){
             startActivity(Intent(this, Dashboard::class.java))
-
         }
 
         registerButton.setOnClickListener{

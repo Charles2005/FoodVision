@@ -48,6 +48,7 @@ class AccountPage : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
             finish()
+            Toast.makeText(this,"You have successfully logged out.",Toast.LENGTH_SHORT)
         }
 
         saveBtn.setOnClickListener {
@@ -55,7 +56,7 @@ class AccountPage : AppCompatActivity() {
             user.restriction = nutrientRestriction.text.toString()
             user.id  = 1
             db.updateUser(user)
-            Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Restriction has been saved", Toast.LENGTH_SHORT).show()
 
         }
 
