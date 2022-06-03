@@ -14,7 +14,6 @@ class NewDataPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.newfoodpage)
-
         val submitBtn = findViewById<ImageButton>(R.id.submitButton)
         val backBtn = findViewById<ImageView>(R.id.newBack)
         val newFood = findViewById<EditText>(R.id.nameText)
@@ -22,9 +21,11 @@ class NewDataPage : AppCompatActivity() {
 
 
         submitBtn.setOnClickListener{
-//            val intent = Intent(this, Dashboard::class.java)
-//            startActivity(intent)
-//            finish()
+           GlobalVar.newFoodName = newFood.text.toString().trim()
+            GlobalVar.newIngredients = newIngredients.text.toString().trim()
+            val intent = Intent(this, Dashboard::class.java)
+            startActivity(intent)
+            finish()
         }
         backBtn.setOnClickListener {
             val intent = Intent(this, Dashboard::class.java)

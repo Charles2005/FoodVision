@@ -31,6 +31,7 @@
         <activity android:name=".activities.FeedbackPage" />
         <activity android:name=".activities.DataPrivacyPage" />
         <activity android:name=".activities.FoodDatabaseView" />
+        <activity android:name=".activities.VerificationCard" />
     </application>
 
 </manifest>

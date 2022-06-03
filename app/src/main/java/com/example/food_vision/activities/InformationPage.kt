@@ -55,9 +55,9 @@ class InformationPage : AppCompatActivity() {
             for(i in foodList){
                 formattedFoodList.append(i).append("\n")
 
-                if(i == restriction) {
+                if(i.trim() == restriction.trim()) {
                     Toast.makeText(this,
-                        restriction,
+                        "Your nutrient restriction is present in this food, be careful!",
                         Toast.LENGTH_LONG).show()
                 }
             }

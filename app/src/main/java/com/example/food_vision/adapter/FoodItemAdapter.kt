@@ -10,10 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.food_vision.R
 import com.example.food_vision.database.FoodModelClass
 
-class FoodItemAdapter {
+class FoodItemAdapter (val context: Context, val items: ArrayList<FoodModelClass>) :
+    RecyclerView.Adapter<FoodItemAdapter.ViewHolder>(){
 
-    class ItemAdapter(val context: Context, val items: ArrayList<FoodModelClass>) :
-        RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
@@ -43,4 +42,3 @@ class FoodItemAdapter {
             val tvName = view.findViewById<TextView>(R.id.nameOfFood)
         }
     }
-}

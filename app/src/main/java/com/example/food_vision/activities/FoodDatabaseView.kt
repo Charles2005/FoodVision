@@ -28,7 +28,7 @@ class FoodDatabaseView : AppCompatActivity() {
             // Set the LayoutManager that this RecyclerView will use.
             rvItemsList.layoutManager = LinearLayoutManager(this)
             // Adapter class is initialized and list is passed in the param.
-            val itemAdapter = FoodItemAdapter.ItemAdapter(this,
+            val itemAdapter = FoodItemAdapter(this,
                 getItemsList() as ArrayList<FoodModelClass>
             )
             // adapter instance is set to the recyclerview to inflate the items.

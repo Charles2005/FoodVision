@@ -15,6 +15,7 @@ class AdminDashboard : AppCompatActivity() {
 
         val adminLogout = findViewById<ImageButton>(R.id.adminLogout)
         val foodDatabase = findViewById<ImageButton>(R.id.fdButton)
+        val verificationPage = findViewById<ImageButton>(R.id.verifyButton)
 
         adminLogout.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -24,7 +25,10 @@ class AdminDashboard : AppCompatActivity() {
         foodDatabase.setOnClickListener {
             val intent = Intent(this, FoodDatabaseView::class.java)
             startActivity(intent)
-            finish()
+        }
+        verificationPage.setOnClickListener {
+            val intent = Intent(this, VerificationCard::class.java)
+            startActivity(intent)
         }
     }
 }
