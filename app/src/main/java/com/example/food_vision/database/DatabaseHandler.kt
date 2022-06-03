@@ -236,7 +236,7 @@ class DatabaseHandler(context:Context):
     }
     // Method for getting specific data
     @SuppressLint("Range")
-    fun getUser(email:String) : String{
+    fun getUserRestriction(email:String) : String{
         val users = UserModelClass()
         val db = writableDatabase
         val selectQuery  = "SELECT * FROM $USER_TABLE WHERE $KEY_EMAIL = " +'"' +"$email" +'"'
@@ -287,6 +287,19 @@ class DatabaseHandler(context:Context):
 
 
     // Method for updating user and food
+    fun updateRestriction(newRestriction: String, currentRestriction: String): Boolean {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_RESTRICTION, newRestriction)
+
+        // Updating records
+        val updateUserData = db.update(USER_TABLE, contentValues, KEY_RESTRICTION + "=?",
+            arrayOf(currentRestriction))
+
+        //Closing database connection
+        db.close()
+        return Integer.parseInt("$updateUserData") != -1
+    }
     fun updateUser(user:UserModelClass): Boolean {
         val db = this.writableDatabase
         val contentValues = ContentValues()
@@ -296,6 +309,7 @@ class DatabaseHandler(context:Context):
 
         // Updating records
         val updateUserData = db.update(USER_TABLE, contentValues, KEY_USER_ID + "=?", arrayOf(user.id.toString())).toLong()
+
 
         //Closing database connection
         db.close()

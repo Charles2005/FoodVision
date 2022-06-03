@@ -1,21 +1,22 @@
 <resources>
     <string name="app_name">Food Vision</string>
     <string-array name="nutrients">
-        <item> Vitamin A </item>
+      <item>None</item>
+        <item>Vitamin A</item>
        <item>Vitamin D</item>
         <item>Vitamin E</item>
-        <item>Vitamin K </item>
-        <item>Vitamin B1 </item>
-        <item>Vitamin B12 </item>
-        <item>Vitamin B6 </item>
-        <item>Vitamin B2 </item>
-        <item>Vitamin B5 </item>
-        <item>Vitamin B3 </item>
-        <item>Vitamin B9 </item>
-        <item>Vitamin B7 </item>
-        <item>Vitamin B6 </item>
-        <item>Vitamin C </item>
-        <item>Vitamin D </item>
+        <item>Vitamin K</item>
+        <item>Vitamin B1</item>
+        <item>Vitamin B12</item>
+        <item>Vitamin B6</item>
+        <item>Vitamin B2</item>
+        <item>Vitamin B5</item>
+        <item>Vitamin B3</item>
+        <item>Vitamin B9</item>
+        <item>Vitamin B7</item>
+        <item>Vitamin B6</item>
+        <item>Vitamin C</item>
+        <item>Vitamin D</item>
         <item>Cholesterol</item>
         <item>Magnesium</item>
         <item>Calcium</item>
