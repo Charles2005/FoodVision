@@ -19,31 +19,26 @@
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/dashboard.xml" value="0.1984375" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/dataprivacypage.xml" value="0.264" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/feedbackpage.xml" value="0.264" />
+        <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/food_card.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/food_database_view.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/informationpage.xml" value="0.264" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/inquirypage.xml" value="0.1984375" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/newfoodpage.xml" value="0.264" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/nodatapage.xml" value="0.1984375" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/registerpage.xml" value="0.264" />
         <entry key="..\:/Users/Seth/Downloads/FoodVision/app/src/main/res/layout/verificationpage.xml" value="0.1984375" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/account_card.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/accountpage.xml" value="0.25" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/activity_account_database_view.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/admindashboard.xml" value="0.25" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/adminlogin.xml" value="0.25" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/dashboard.xml" value="0.25" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/dataprivacypage.xml" value="0.22" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/feedbackpage.xml" value="0.22" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/food_card.xml" value="0.20516304347826086" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/food_database_view.xml" value="0.1953125" />
+        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/feedbackpage.xml" value="0.33" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/informationpage.xml" value="0.25" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/inquirypage.xml" value="0.1" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/newfoodpage.xml" value="0.25" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/nodatapage.xml" value="0.15353260869565216" />
         <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/registerpage.xml" value="0.22" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/update.xml" value="0.20425724637681159" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/verification_card.xml" value="0.20516304347826086" />
-        <entry key="..\:/Users/abech/Downloads/FoodVision1/app/src/main/res/layout/verificationpage.xml" value="0.20516304347826086" />
       </map>
     </option>
   </component>
