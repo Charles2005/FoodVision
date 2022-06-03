@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -18,17 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.Register"></activity>
-        <activity android:name=".activities.AccountPage"></activity>
-        <activity android:name=".activities.AdminDashboard"></activity>
-        <activity android:name=".activities.AdminLogin"></activity>
-        <activity android:name=".activities.Dashboard"></activity>
-        <activity android:name=".activities.InformationPage"></activity>
-        <activity android:name=".activities.NewDataPage"></activity>
-        <activity android:name=".activities.NoDataPage"></activity>
-        <activity android:name=".activities.NutritionalInquiry"></activity>
-        <activity android:name=".activities.FeedbackPage"></activity>
-        <activity android:name=".activities.DataPrivacyPage"></activity>
+        <activity android:name=".activities.Register" />
+        <activity android:name=".activities.AccountPage" />
+        <activity android:name=".activities.AdminDashboard" />
+        <activity android:name=".activities.AdminLogin" />
+        <activity android:name=".activities.Dashboard" />
+        <activity android:name=".activities.InformationPage" />
+        <activity android:name=".activities.NewDataPage" />
+        <activity android:name=".activities.NoDataPage" />
+        <activity android:name=".activities.NutritionalInquiry" />
+        <activity android:name=".activities.FeedbackPage" />
+        <activity android:name=".activities.DataPrivacyPage" />
+        <activity android:name=".activities.FoodDatabaseView" />
     </application>
 
 </manifest>

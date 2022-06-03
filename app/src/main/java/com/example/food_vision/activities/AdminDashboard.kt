@@ -14,10 +14,17 @@ class AdminDashboard : AppCompatActivity() {
         setContentView(R.layout.admindashboard)
 
         val adminLogout = findViewById<ImageButton>(R.id.adminLogout)
+        val foodDatabase = findViewById<ImageButton>(R.id.fdButton)
 
         adminLogout.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+
+        foodDatabase.setOnClickListener {
+            val intent = Intent(this, FoodDatabaseView::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

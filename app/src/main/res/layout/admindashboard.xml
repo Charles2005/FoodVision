@@ -9,60 +9,32 @@
         android:id="@+id/adminLogout"
         android:layout_width="206dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="36dp"
-        android:scaleType="fitCenter"
+        android:layout_marginBottom="60dp"
         android:background="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idButton"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logout" />
 
-    <ImageButton
-        android:id="@+id/acButton"
-        android:layout_width="276dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="fitCenter"
-        android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/acbutton" />
 
     <ImageButton
         android:id="@+id/fdButton"
         android:layout_width="276dp"
         android:layout_height="58dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="fitCenter"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="356dp"
         android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/adminLogout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acButton"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fdbutton" />
-
-    <ImageButton
-        android:id="@+id/idButton"
-        android:layout_width="276dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="fitCenter"
-        android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fdButton"
-        app:srcCompat="@drawable/idbutton" />
 
     <ImageView
         android:id="@+id/imageView5"

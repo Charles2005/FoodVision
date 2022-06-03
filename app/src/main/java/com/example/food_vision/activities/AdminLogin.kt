@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.food_vision.R
 
 class AdminLogin : AppCompatActivity() {
@@ -24,6 +25,18 @@ class AdminLogin : AppCompatActivity() {
         adminBack.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+
+        adminLogin.setOnClickListener {
+            if (adminEmail.text.toString().equals("foodvision@gmail.com") &&
+                adminPassword.text.toString().equals("foodvision00")) {
+                val intent = Intent(this, AdminDashboard::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                finish()
+            }else{
+                Toast.makeText(this, "Wrong Credentials", Toast.LENGTH_SHORT).show()
+            }
         }
 
     }

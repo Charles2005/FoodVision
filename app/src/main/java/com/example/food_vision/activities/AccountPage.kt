@@ -37,7 +37,7 @@ class AccountPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val logoutBtn = findViewById<ImageButton>(R.id.logoutButton)
         val saveBtn = findViewById<ImageButton>(R.id.saveButton)
 
-        Toast.makeText(this, restriction, Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, restriction, Toast.LENGTH_SHORT).show()
         // Adapter for spinner
         ArrayAdapter.createFromResource(
             this,

@@ -3,20 +3,27 @@ package com.example.food_vision.activities
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.food_vision.R
 import com.example.food_vision.database.DatabaseHandler
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class InformationPage : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.informationpage)
+        // Firebase
+        auth = Firebase.auth
+        val currentUser = auth.currentUser
         //Database
         var db = DatabaseHandler(this)
+        val restriction = db.getUserRestriction(currentUser?.email.toString())
         //Components
         val intent = getIntent()
         var bitmap = intent.getParcelableExtra<Bitmap>("foodImage")
@@ -26,6 +33,7 @@ class InformationPage : AppCompatActivity() {
         val foodInput = findViewById<EditText>(R.id.inputFoodName)
         val enterFoodInput = findViewById<Button>(R.id.enterFood)
         val infoNutrients = findViewById<TextView>(R.id.nutrientsInfo)
+
 
         // Setting food image
         foodImage.setImageBitmap(bitmap)
@@ -46,6 +54,12 @@ class InformationPage : AppCompatActivity() {
 
             for(i in foodList){
                 formattedFoodList.append(i).append("\n")
+
+                if(i == restriction) {
+                    Toast.makeText(this,
+                        restriction,
+                        Toast.LENGTH_LONG).show()
+                }
             }
             infoNutrients.setText(formattedFoodList)
 

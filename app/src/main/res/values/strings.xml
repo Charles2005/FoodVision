@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Food Vision</string>
+    <string name="newFood"> </string>
+    <string name="newIngredients"> </string>
     <string-array name="nutrients">
-      <item>None</item>
+        <item>None</item>
         <item>Vitamin A</item>
-       <item>Vitamin D</item>
+        <item>Vitamin D</item>
         <item>Vitamin E</item>
         <item>Vitamin K</item>
         <item>Vitamin B1</item>
@@ -42,7 +44,7 @@
         <item>Dietary fiber</item>
         <item>Sugar</item>
     </string-array>
-   <string name="dataPrivacy">DATA PRIVACY NOTICE
+    <string name="dataPrivacy">DATA PRIVACY NOTICE
 
 In accordance with the Data Privacy Act of 2012 and its implementing Rules and Regulations, agreeing to this will let Food Vision to access, collect, and process any personal information and/or sensitive personal information. The gathered information will be handled with strict confidentiality.
 In adherence to the sections of Data Privacy Act, the following will be followed:
