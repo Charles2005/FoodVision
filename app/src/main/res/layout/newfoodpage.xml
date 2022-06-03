@@ -90,11 +90,11 @@
         android:drawablePadding="5dp"
         android:ems="10"
         android:fontFamily="@font/font2"
+        android:hint="Ingredients (Separated by comma)"
         android:inputType="textPersonName"
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
-        android:hint="Ingredients(Separated by comma)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -104,12 +104,14 @@
         android:layout_width="206dp"
         android:layout_height="57dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="fitCenter"
         android:background="@null"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageView24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newIngredients"
+        app:layout_constraintVertical_bias="0.973"
         app:srcCompat="@drawable/submit" />
 
     <androidx.constraintlayout.widget.Group

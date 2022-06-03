@@ -127,10 +127,12 @@
         android:padding="10dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#83205522"
+        app:layout_constraintBottom_toTopOf="@+id/feedbackSubmit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fbName" />
+        app:layout_constraintTop_toBottomOf="@+id/fbName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group8"
