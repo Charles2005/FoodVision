@@ -94,7 +94,7 @@
         android:paddingLeft="8dp"
         android:textColor="@color/fontcolor1"
         android:textColorHint="#7E205522"
-        android:hint="Type Ingredients"
+        android:hint="Ingredients(Separated by comma)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />

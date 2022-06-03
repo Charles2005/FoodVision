@@ -18,9 +18,6 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard)
 
-        // Intent value
-        val currentUserEmail = intent.getStringExtra("currentEmail")
-
         // Components
         val accountBtn = findViewById<ImageView>(R.id.accountButton)
         val nutInq = findViewById<ImageButton>(R.id.inquiryButton)

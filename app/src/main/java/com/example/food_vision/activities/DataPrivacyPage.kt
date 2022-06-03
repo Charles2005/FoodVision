@@ -50,7 +50,6 @@ class DataPrivacyPage: AppCompatActivity() {
 
         yesButton.setOnClickListener {
             val intent = Intent(this, Dashboard::class.java)
-            intent.putExtra("currentEmail", currentUserEmail)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
             finish()

@@ -97,7 +97,7 @@ class Register : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         auth.createUserWithEmailAndPassword(user.email, user.password)
                             .addOnCompleteListener(this){ task ->
                                 if(task.isSuccessful){
-                                    //success = dbHandler?.addUser(user) as Boolean
+                                    success = dbHandler?.addUser(user) as Boolean
                                     // Sending Email Verification
                                     val firebaseUser = Firebase.auth.currentUser
                                     firebaseUser!!.sendEmailVerification()

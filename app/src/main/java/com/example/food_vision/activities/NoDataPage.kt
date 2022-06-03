@@ -18,12 +18,15 @@ class NoDataPage : AppCompatActivity() {
 
         leaveBtn.setOnClickListener{
             val intent = Intent(this, Dashboard::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
+            finish()
         }
 
         sureBtn.setOnClickListener{
             val intent = Intent(this, NewDataPage::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

@@ -236,37 +236,55 @@ class DatabaseHandler(context:Context):
     }
     // Method for getting specific data
     @SuppressLint("Range")
-    fun getUser(_id: Int) : UserModelClass{
+    fun getUser(email:String) : String{
         val users = UserModelClass()
         val db = writableDatabase
-        val selectQuery  = "SELECT * FROM $USER_TABLE WHERE $KEY_USER_ID = $_id"
+        val selectQuery  = "SELECT * FROM $USER_TABLE WHERE $KEY_EMAIL = " +'"' +"$email" +'"'
 
         val cursor = db.rawQuery(selectQuery, null)
 
-        users.id = Integer.parseInt(cursor.getString(cursor.getColumnIndex(KEY_USER_ID)))
-        users.email = cursor.getString(cursor.getColumnIndex(KEY_EMAIL))
-        users.password = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD))
-        users.restriction = cursor.getString(cursor.getColumnIndex(KEY_RESTRICTION))
-
+        if(cursor != null && cursor.moveToFirst()){
+            do {
+                users.restriction = cursor.getString(cursor.getColumnIndex(KEY_RESTRICTION))
+            }while(cursor.moveToNext())
+        }
         cursor.close()
-        return users
+        return users.restriction
     }
+
     @SuppressLint("Range")
-    fun getFood(_id: Int) : FoodModelClass{
+    fun getFood(name: String) : String {
         val food = FoodModelClass()
         val db = writableDatabase
-        val selectQuery  = "SELECT * FROM $FOOD_TABLE WHERE $KEY_FOOD_ID = $_id"
+        val selectQuery  = "SELECT * FROM $FOOD_TABLE WHERE $KEY_FOOD_NAME = " + '"' + "$name" +'"'
 
         val cursor = db.rawQuery(selectQuery, null)
 
-        food.id = Integer.parseInt(cursor.getString(cursor.getColumnIndex(KEY_USER_ID)))
-        food.name = cursor.getString(cursor.getColumnIndex(KEY_FOOD_NAME))
-        food.ingredients = cursor.getString(cursor.getColumnIndex(KEY_FOOD_INGREDIENTS))
-        food.nutrients = cursor.getString(cursor.getColumnIndex(KEY_FOOD_NUTRIENTS))
-
+        if(cursor != null && cursor.moveToFirst()){
+            do {
+                food.nutrients = cursor.getString(cursor.getColumnIndex(KEY_FOOD_NUTRIENTS))
+            }while(cursor.moveToNext())
+        }
         cursor.close()
-        return food
+        return food.nutrients
     }
+    // Getting Name of food
+    @SuppressLint("Range")
+    fun getFoodName(name: String) : Boolean{
+        val food = FoodModelClass()
+        val db = writableDatabase
+        val selectQuery  = "SELECT * FROM $FOOD_TABLE WHERE $KEY_FOOD_NAME = " + '"' + "$name" +'"'
+
+        val cursor = db.rawQuery(selectQuery, null)
+
+        if(cursor.count <= 0){
+            cursor.close()
+            return false;
+        }
+        cursor.close()
+        return true;
+    }
+
 
     // Method for updating user and food
     fun updateUser(user:UserModelClass): Boolean {
@@ -287,8 +305,6 @@ class DatabaseHandler(context:Context):
     fun updateFood(food:FoodModelClass): Boolean {
         val db = this.writableDatabase
         val contentValues = ContentValues()
-        contentValues.put(KEY_FOOD_NAME, food.name )
-        contentValues.put(KEY_FOOD_INGREDIENTS, food.ingredients)
         contentValues.put(KEY_FOOD_NUTRIENTS, food.nutrients)
 
         // Updating records
