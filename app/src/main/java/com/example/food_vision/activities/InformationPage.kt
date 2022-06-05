@@ -46,7 +46,7 @@ class InformationPage : AppCompatActivity() {
         enterFoodInput.setOnClickListener{
             foodName.setText(foodInput.text.toString())
             val foodNutrients =  db.getFood(foodInput.text.toString().replaceFirstChar { it.uppercase() })
-            val compareFoodName = db.getFoodName(foodInput.text.toString().replaceFirstChar { it.uppercase() })
+            val compareFoodName = db.checkFoodName(foodInput.text.toString().replaceFirstChar { it.uppercase() })
             val foodList: List<String> = foodNutrients.split(",").toList()
             val formattedFoodList = StringBuilder()
             foodInput.setText("")

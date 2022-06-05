@@ -38,10 +38,10 @@
         <item>Molybdenum</item>
         <item>Protein</item>
         <item>Carbohydrate</item>
-        <item>Saturated fat</item>
-        <item>Unsaturated fat</item>
-        <item>Trans fat</item>
-        <item>Dietary fiber</item>
+        <item>Saturated Fat</item>
+        <item>Unsaturated Fat</item>
+        <item>Trans Fat</item>
+        <item>Dietary Fiber</item>
         <item>Sugar</item>
     </string-array>
     <string name="dataPrivacy">DATA PRIVACY NOTICE

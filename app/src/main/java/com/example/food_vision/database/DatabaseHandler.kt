@@ -36,7 +36,7 @@ class DatabaseHandler(context:Context):
                 + " TEXT," + KEY_RESTRICTION + " TEXT" + ")")
         // SQL Query for creating food table
         val CREATE_FOOD_TABLE = ("CREATE TABLE " + FOOD_TABLE + "("
-                + KEY_FOOD_ID + " INTEGER PRIMARY KEY," + KEY_FOOD_NAME + " TEXT," + KEY_FOOD_INGREDIENTS
+                + KEY_FOOD_ID + " INTEGER PRIMARY KEY," + KEY_FOOD_NAME + " TEXT UNIQUE," + KEY_FOOD_INGREDIENTS
                 + " TEXT," + KEY_FOOD_NUTRIENTS + " TEXT" + ")")
 
         db?.execSQL(CREATE_USER_TABLE)
@@ -268,9 +268,10 @@ class DatabaseHandler(context:Context):
         cursor.close()
         return food.nutrients
     }
-    // Getting Name of food
+
+    // Checking if the  name of food is in the database
     @SuppressLint("Range")
-    fun getFoodName(name: String) : Boolean{
+    fun checkFoodName(name: String) : Boolean{
         val food = FoodModelClass()
         val db = writableDatabase
         val selectQuery  = "SELECT * FROM $FOOD_TABLE WHERE $KEY_FOOD_NAME = " + '"' + "$name" +'"'

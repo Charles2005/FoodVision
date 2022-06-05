@@ -28,13 +28,14 @@ class VerificationCard:AppCompatActivity() {
         acceptBtn.setOnClickListener{
             var success:Boolean = false
             val food = FoodModelClass()
-            food.name = newFoodName.text.toString().trim()
-            food.ingredients = newIngredients.text.toString().trim()
-            food.nutrients = newNutrients.text.toString().trim()
+            food.name = newFoodName.text.toString().replaceFirstChar { it.uppercase() }
+            food.ingredients = newIngredients.text.toString()
+            food.nutrients = newNutrients.text.toString()
             success = db.addFood(food) as Boolean
             Toast.makeText(this, "Successfully added", Toast.LENGTH_SHORT).show()
             newFoodName.setText("New Food")
             newIngredients.setText("New Ingredients")
+            newNutrients.setText("")
 
         }
         rejectBtn.setOnClickListener{
