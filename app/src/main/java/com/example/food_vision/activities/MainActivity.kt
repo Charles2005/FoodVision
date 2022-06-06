@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val registerButton = findViewById<ImageButton>(R.id.registerButton)
         val adminBtn = findViewById<ImageButton>(R.id.adminButton)
         val loginBtn = findViewById<ImageButton>(R.id.loginButton)
+        val eyeBtn = findViewById<Button>(R.id.eyeButton)
 
         val emailText = findViewById<EditText>(R.id.emailTextBox)
         val passwordText = findViewById<EditText>(R.id.passwordTextBox)
@@ -53,6 +55,14 @@ class MainActivity : AppCompatActivity() {
         adminBtn.setOnClickListener{
             val intent = Intent(this, AdminLogin::class.java)
             startActivity(intent)
+        }
+
+        eyeBtn.setOnClickListener{
+            adminBtn.visibility = if (adminBtn.visibility == View.VISIBLE){
+                View.INVISIBLE
+            } else {
+                View.VISIBLE
+            }
         }
 
         loginBtn.setOnClickListener{
